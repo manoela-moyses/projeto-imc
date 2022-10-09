@@ -37,7 +37,6 @@ button {
   height: 100vh;
   display: grid;
   place-content: center;
-  padding: 1.6rem;
 }
 
 .card {
@@ -54,10 +53,6 @@ button {
   line-height: 4rem;
   color: var(--tt-heading);
   text-align: center;
-}
-
-form {
-  min-width: 30rem;
 }
 
 form h1 {
@@ -170,4 +165,22 @@ form button:hover {
   visibility: hidden;
   transform: translateY(-30px);
   transition: transform 0.5s;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .container {
+    padding: 1.6rem;
+  }
+
+  .card {
+    padding: 3.2rem;
+  }
+
+  form {
+    max-width: 30rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
 }
